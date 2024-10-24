@@ -3,7 +3,7 @@ import test from "node:test";
 
 function act(input: number[]) {
   if (input[0] === 2) {
-    input[0] = 4;
+    return input.map((n) => n ** n);
   }
 
   return input;
