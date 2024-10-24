@@ -2,11 +2,7 @@ import { deepEqual } from "node:assert/strict";
 import test from "node:test";
 
 function act(input: number[]) {
-  if (input[0] === 2) {
-    return input.map((n) => n ** n);
-  }
-
-  return input;
+  return input.map((n) => n ** n);
 }
 
 test("Zero test case", () => {
