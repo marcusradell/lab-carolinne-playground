@@ -12,3 +12,9 @@ test("Zero test case", () => {
 
   deepEqual(result, []);
 });
+
+test("One test case", () => {
+  const result = act([1]);
+
+  deepEqual(result, [1]);
+});
